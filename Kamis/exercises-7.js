@@ -6,7 +6,7 @@
 
 function hapusSimbol(str) {
     // var regexPattern = new RegExp();
-    return str.replace(/\s/, '');
+    return str.replace(/[^a-zA-Z0-9]/g, '');
 }
 
 // TEST CASES
