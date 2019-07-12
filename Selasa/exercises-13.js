@@ -27,17 +27,11 @@ function sorting(arrNumber) {
 }
 
 function getTotal(arrNumber) {
-    let highNumber = 0;
+    let highNumber = arrNumber[arrNumber.length - 1];
     let counter = 0;
 
     if (arrNumber.length <= 0) {
-        return arrNumber;
-    }
-
-    for (let i = 0; i < arrNumber.length; i++) {
-        if (arrNumber[i] > highNumber) {
-            highNumber = arrNumber[i];
-        }
+        return '';
     }
 
     for (let i = 0; i < arrNumber.length; i++) {
