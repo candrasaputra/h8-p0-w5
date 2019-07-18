@@ -19,14 +19,12 @@
 */
 
 function makanTerusRekursif(waktu) {
-    let num = 1;
-
     if (waktu === 0) {
         return 0;
     } else if (waktu <= 15) {
         return 1;
     } else {
-        return num + makanTerusRekursif(waktu - 15); 
+        return 1 + makanTerusRekursif(waktu - 15); 
     }
 }
 
